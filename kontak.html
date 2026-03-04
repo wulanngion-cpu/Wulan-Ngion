@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Form Kontak</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 30%;
+    background: #feffff;
+    color: rgb(17, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.content {
+    width: 70%;
+    padding: 40px;
+    background: linear-gradient(to right, #cfe9f3, #d9f7e3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.back {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #333;
+}
+
+.back a:hover {
+    color: teal;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.checkbox label{
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox input{
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 6px 15px;
+    background: #4a565a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: teal;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    Tugas
+</div>
+
+<div class="content">
+
+<h1>Form Kontak</h1>
+
+<div class="back">
+<a href="sistematic5.html">Kembali ke Portfolio</a>
+</div>
+
+    <form>
+ <h2>Hubungi Saya</h2>
+
+        <label>Nama Lengkap:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Nomor HP:</label>
+        <input type="text">
+
+        <label>Subjek:</label>
+        <select>
+            <option>Pertanyaan</option>
+            <option>Kerjasama</option>
+            <option>Lainnya</option>
+        </select>
+
+        <label>Pesan:</label>
+        <textarea></textarea>
+
+        <div class="checkbox">
+    <label>
+    <input type="checkbox"> Saya menyetujui pengiriman data
+    </label>
+</div>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <footer>
+        © 2026 Wulan Melani Christy Ngion
+    </footer>
+
+</div>
+
+</body>
+</html>
