@@ -1,0 +1,109 @@
+body{
+background: rgb(167, 215, 234);
+font-family: Arial;
+margin:0;
+}
+
+.grid-container{
+display:grid;
+grid-template-columns: 1fr 2fr 1fr;
+gap:20px;
+padding:40px;
+
+grid-template-areas:
+"header header header"
+"foto pribadi skill"
+"foto pendidikan organisasi"
+"foto pengalaman hobby"
+"foto kontak kontak";
+}
+
+.box{
+padding:20px;
+border-radius:12px;
+color:white;
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.header{
+grid-area:header;
+background:#000000;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+}
+
+.foto{
+grid-area:foto;
+background:#00b3ff;
+text-align:center;
+}
+
+.pribadi{
+grid-area:pribadi;
+background:#ffaeed;
+}
+
+.pendidikan{
+grid-area:pendidikan;
+background:#ffaeed;
+}
+
+.skill{
+grid-area:skill;
+background:#ffaeed;
+}
+
+.organisasi{
+grid-area:organisasi;
+background:#ffaeed;
+}
+
+.pengalaman{
+grid-area:pengalaman;
+background:#ffaeed;
+}
+
+.hobby{
+grid-area:hobby;
+background:#ffaeed;
+}
+
+.kontak{
+grid-area:kontak;
+background:#ffaeed;
+text-align:center;
+}
+
+
+.foto img{
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+margin-bottom:10px;
+}
+
+
+@media(max-width:768px){
+
+.grid-container{
+
+grid-template-columns:1fr;
+
+grid-template-areas:
+"header"
+"foto"
+"pribadi"
+"pendidikan"
+"skill"
+"organisasi"
+"pengalaman"
+"hobby" 
+"kontak";
+
+}
+
+}
